@@ -48,8 +48,10 @@ export default class MultiorgRelatedList extends LightningElement {
         {
             type: 'action', typeAttributes:
             {
-                rowActions: [{ label: 'Escalate', name: 'escalate' }, { label: 'Contact case handler', name: 'contact' }],
-                menuAlignment: 'auto'
+                rowActions: [{ label: 'Escalate', name: 'escalate' },
+                { label: 'Contact case handler', name: 'contact' },
+                { label: 'Show case in other system', name: 'deeplink' }],
+                    menuAlignment: 'auto'
             }
         }
     ]

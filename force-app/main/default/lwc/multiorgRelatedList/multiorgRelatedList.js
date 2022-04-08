@@ -48,10 +48,12 @@ export default class MultiorgRelatedList extends LightningElement {
         {
             type: 'action', typeAttributes:
             {
-                rowActions: [{ label: 'Escalate', name: 'escalate' },
-                { label: 'Contact case handler', name: 'contact' },
-                { label: 'Show case in other system', name: 'deeplink' }],
-                    menuAlignment: 'auto'
+                rowActions: [
+                    { label: 'Escalate', name: 'escalate' },
+                    { label: 'Contact case handler', name: 'contact' },
+                    { label: 'Show case in other system', name: 'deeplink' }
+                ],
+                menuAlignment: 'auto'
             }
         }
     ]
@@ -64,6 +66,8 @@ export default class MultiorgRelatedList extends LightningElement {
                 break;
             case 'contact':
                 alert('Case handler is: Toni Melisma, toni.melisma@salesforce.com, 415-215-0790');
+                break;
+            case 'deeplink':
                 break;
         }
     }
